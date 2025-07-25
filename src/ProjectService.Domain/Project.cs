@@ -14,5 +14,5 @@ public class Project
 
     public DateTime EndDate { get; set; }
 
-    public List<ProjectStage> ProjectStages { get; set; } = [];
+    public List<Guid> ProjectStages { get; set; } = [];
 }

@@ -8,7 +8,7 @@ public class WorkComplect
 
     public required string Name { get; set; }
 
-    public required  Guid DepartmentId { get; set; }
+    public required Guid DepartmentId { get; set; }
 
     public int LaborCost { get; set; }
 

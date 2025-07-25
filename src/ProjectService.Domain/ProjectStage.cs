@@ -1,5 +1,12 @@
 namespace FinancialPlanning.Domain;
 
+public enum Status
+{
+    Planning,
+    Active,
+    Complete,
+}
+
 public class ProjectStage
 {
     public Guid Id { get; set; }
@@ -14,12 +21,5 @@ public class ProjectStage
 
     public Status Status { get; set; } = Status.Planning;
 
-    public List<WorkComplect> WorkComplects { get; set; } = [];
-}
-
-public enum Status
-{
-    Planning,
-    Active,
-    Complete    
+    public List<Guid> WorkComplects { get; set; } = [];
 }

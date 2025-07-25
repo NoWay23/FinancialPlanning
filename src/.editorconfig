@@ -1,0 +1,27 @@
+# Общие настройки для C#
+[*.cs]
+
+# Отключаем требование XML-документации (SA1600, SA1602 и др.)
+dotnet_diagnostic.SA1600.severity = none      # Элементы должны быть задокументированы
+dotnet_diagnostic.SA1601.severity = none      # Partial-элементы должны быть задокументированы
+dotnet_diagnostic.SA1602.severity = none      # Перечисления должны иметь документацию
+dotnet_diagnostic.SA1611.severity = none      # Параметры должны быть задокументированы
+dotnet_diagnostic.SA1615.severity = none      # Возвращаемые значения должны быть задокументированы
+dotnet_diagnostic.SA1618.severity = none      # Generic-параметры должны быть задокументированы
+dotnet_diagnostic.SA1633.severity = none      
+
+dotnet_diagnostic.SA1505.severity = none      
+dotnet_diagnostic.SA1508.severity = none      
+dotnet_diagnostic.SA1010.severity = none      
+dotnet_diagnostic.SA1101.severity = none   
+dotnet_diagnostic.SA1300.severity = none      
+
+
+
+
+
+# Другие полезные настройки (опционально)
+indent_size = 4                               # Размер отступа
+charset = utf-8                               # Кодировка файлов
+end_of_line = crlf                            # Символы конца строки (Windows)
+insert_final_newline = true                   # Пустая строка в конце файла
